@@ -1,0 +1,15 @@
+sistema de versionamento de codigo distribuido
+
+beneficios:
+    controle de versão
+    armazenamento em nuvem
+    trabalho em equipe
+    melhorar seu codigo
+    reconhecimento
+
+/////////////// navegação via command interface e instalação
+cli -> comand line interface
+gui -> graphic user interface
+
+
+

@@ -1,0 +1,36 @@
+/////////// microserviços e BFF(Back For Front) 
+    monolítico -> toda solução em um único projeto, único lugar
+
+    microserviços -> conjunto de API, de endpoint, quebrando um monolítico por exemplo em pequenos pedaços
+        tem mais camadas,
+        ter mais conhecimento para gerenciar os microserviços,
+        entrega geralmente rest/restfull,
+        
+
+    BFF -> é uma api, poder ser varios tipo de api
+        pode ser rest/restfull
+        pegar informação que é preciso por exemplo para mobile ou para web,
+        pegar informação para o que é preciso,
+        entregar para o front uma regra mais exata, o que deve entregar para cada um,
+        um BFF para mobile e um para a web
+
+/////////// DDD (Domain Drive Designer) 
+
+    2003 Eric Evans
+    desenvolvimento orientado por designer
+    padrão de projetos
+    fácil de compreender
+    dificil de aplicar
+    guia para criar uma modelagem com base de negocios
+    domine a teoria e não a pratica
+    modelo e o coração do designer dão forma um ao outro
+    modelo é a espinha dorsal de uma linguagem utilizada por todos os membros da equipe
+    modelo é um conhecimento destilado (compartilhar o conhecimento, as ideias)
+
+
+/////////// Saber como e onde aplicar
+    DDD - lite : pegar pequenas partes do ddd e aplicar
+    tenha o context map definido e coeso
+    DDD não é quebrar a arquitetura em camadas
+    leia sobre designer pattern
+    DDD score card ->  (usar ou não o DDD)
