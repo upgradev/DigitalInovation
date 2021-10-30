@@ -53,3 +53,15 @@ criar chaves:
         eval $(ssh-agent -s)
     entregar a chave para o agent
         ssh-add chave_privada
+
+clonar pelo ssh:
+    git clone caminho_ssh
+
+Chave pelo Token:
+    ir no github e depois ir no developer settings
+    escolher Personal Acess token
+    copiar o token
+
+clonar pelo token:
+    ir no link do https
+    git clone link_https
