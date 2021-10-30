@@ -65,3 +65,14 @@ Chave pelo Token:
 clonar pelo token:
     ir no link do https
     git clone link_https
+
+
+----- comandos git
+git init -> iniciar o git, para gerenciar
+    git config --global user.name "seu nome"
+    git config --global user.email "seu email"
+
+arquivo Makdown -> para um html mais facil para o usuario
+
+git add  ->
+git commit ->
