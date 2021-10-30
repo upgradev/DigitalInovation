@@ -74,5 +74,5 @@ git init -> iniciar o git, para gerenciar
 
 arquivo Makdown -> para um html mais facil para o usuario
 
-git add  ->
-git commit ->
+git add  -> git add *
+git commit -> git commit -m "descricao"
