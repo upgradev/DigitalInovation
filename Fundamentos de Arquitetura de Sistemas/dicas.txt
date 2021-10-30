@@ -1,0 +1,95 @@
+---- Vantagens e desenvolvimento de web service
+O que são Web Services:
+    são soluções para aplicações independente da linguagem utilizada, software e hardwares
+    inicialmente foram criados para troca de mensagens utilizando xml rodando sobre protocolo http
+    pode se dizer que serviços web são apis que se comunicam pela rede sobre protocolo
+
+    serviço web e uma api mas api nem sempre é serviço web
+
+    Vantagens:
+        Linguagem comum (xml, JSON)
+        integração
+        reutilização de implementação
+        segurança
+        custo (mais barato)
+
+    principais tecnologias:
+        SOAP
+        REST
+        XML
+        JSON
+
+Estrutura SOAP:
+    SOAP simple object access protocol
+        baseado em xml para acessar web service por http
+        como serviços web se comunicam
+        desenvolvido para facilitar integrações
+        permite integrações
+        mensagens XML
+        permite roda em cima de outros protocolos
+
+    XML - entensive markup language
+        cirada pelo w3c na decada de 90
+        facilita separação de conteudo
+        não tem limitação de criação de tags
+        linguagem comum para integrações de aplicações
+
+    SOAP Message possui estrutura unica que  deve ser seguida
+        SOAP envelope : encapsula toda a mensagem
+        SOAP Header: possui informação de atributos e metadados da requisição
+        SOAP Body: contem delalhes da aplicação 
+
+Entendendo o que é WSDL e XSD
+    WSDL: web service description languagem
+        usado para descrever web service, funciona como um contrato do serviço
+        descrição feito por um documento XML
+
+    XSD: XML schema definition
+        usado para definir a estrutura de dados que sera validada no xml
+        funciona como uma documentação de como deve ser montado o SOAP Message
+
+    exemplo: http://www.soapclient.com/xml/soapresponder.wsdl
+    ajudar no gerencimento do SOAP: https://www.soapui.org/, transformando o xml para xml Message
+
+Aprenda o que são REST, API e JSON
+
+    O que é REST
+        respresentation state transfer
+        estilo de arquitetura de software, define a implementação de um serviço web
+        podem trabalhar com formatos xml, JSON entre outros
+
+    Vantagens em se utilizar REST
+        permite integrações entre aplicaçõe e também entre cliente e servidor
+        utiliza metodos http para as operações efetuadas
+        arquitetura facil compreensão
+
+    o que é api
+        application programming interface
+        conjuntos de rotinas documentadas e disponibilizadas por uma aplicação
+        popular com o aumento dos serviços web
+
+    Entendendo metodos utilizados pelo REST
+        Get - solicita representação de um recurso
+        post - solicita a criação de um recurso
+        delete - solicita a exclusão de um recurso
+        put - solicita a atualização de um recurso
+
+    JSON
+        javaScript Objebct notation
+        formato leve para troca de mensagem entre sistemas
+        estrutura de chave e valor e também listas ordenadas
+        um dos mais populares e utilizados
+
+Veja sobre integração com REST e métodos HTTP na prática
+
+    Codigo de Estado
+        usado pelo servidor para avisar o cliente sobre o estado da operação
+        1xx - informativo
+        2xx - sucesso
+        3xx - redirecionamento
+        4xx - erro do cliente
+        5xx - erro do servidor
+        
+
+
+
