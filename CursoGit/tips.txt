@@ -12,4 +12,44 @@ cli -> comand line interface
 gui -> graphic user interface
 
 
+/////////////// Tópicos fundamentais para entender o funcionamento do Git
+SHA1
+-Algoritmo de hash seguro, conjunto de funções hash criptograficas, possui 40 dígitos
+-echo "ola mundo" | openssl sha1 : (stdin)=hash
+-comandos:
+-openssl sha1 texto.txt -> mostra o hash que gerou, para verificar que cada vez que gerar o comando do arquivo
+mostra o hsh diferente
 
+Objetos funcamentais
+-blobs - bloco basico, arquivos
+echo 'conteudo' | git hash-object --stdin : mostra o hash do conteudo
+echo -e 'blob 9/0conteudo' | openssl sha1 : mostra o hash do comando anterior
+
+-trees 
+    armazena os blobs, como diretorios
+    armazena e aponta
+    arvore que armazena metadados
+    guarda o nome do arquivo
+    tem um sha1
+
+-commits
+    juntar tudo, 
+    aponta para uma arvore, parente autor e mensagem
+
+
+Sistema Distribuido
+
+Segurança
+
+
+Chave SSH e Token
+chave SSH : comunicação entre local e servidor com duas chaves publica e privada
+criar chaves:
+    ssh-keygen -t ed25519 -C email
+    dar enter
+    entrar com uma senha
+
+    inicializar ssh agent:
+        eval $(ssh-agent -s)
+    entregar a chave para o agent
+        ssh-add chave_privada
