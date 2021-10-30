@@ -86,3 +86,12 @@ git commit -> engloba todo o objeto, sai do staged para o commit
 depois retorna o unmodified
 
 git status -> monitorar os estados dos arquivos
+
+
+
+----- Trabalhando com o GitHub
+git config --list -> lista de configuração do git
+git config --global --unset user.email -> remove o email
+
+
+------ Como os conflitos acontecem no GitHub e como resolvê-los
