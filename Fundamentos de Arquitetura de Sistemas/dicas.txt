@@ -258,3 +258,32 @@ Arquitetura da internet das coisas e protocolo de comunicação
 Flexibilidade dos tópicos e Cloud
     protocolo(mqtt) -> broker -> uder indentifier -> sensor -> information type
     
+    Comparativo entre os tipos de arquitetura
+        Monolito:
+            pro:
+                baixa complexidade
+                monitoramento simplificado
+            contra:
+                stack unica 
+                compartilhamento de recursos 
+                acoplamento
+                mais complexo a escabilidade
+        
+        microserviços
+            pros
+                stack dinamica
+                simples escabilidade
+                pode haver desacoplamento
+                pode haver menor complexidade
+
+            contra
+                acoplamento
+                monitoramento mais complexo
+                provisionamento mais complexo
+                plataforma pode depender do gerenciador de pipeline
+
+    gerencimento de erros e volume de acessos
+
+
+
+
