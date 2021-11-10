@@ -1,0 +1,19 @@
+compilar pelo maven 
+    ir no maven -> lifecicle -> install
+    depois ir no maven-> plugin -> spring boot -> run
+
+    ir pela linha de comando maven:
+        ir dentro do diretorio root do projeto e depois java -jar target/nome_do_projeto.jar
+    
+     ir pela linha de comando gradle:
+        ir dentro do diretorio root do projeto e depois java -jar build/libs/nome_do_projeto.jar
+
+
+compilar por comando puro
+javac Hello.java
+java Hello. class -> arquivo bytecode
+
+///// Caracteristica da linguagem java
+Iniciando um projeto
+
+

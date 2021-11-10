@@ -1,0 +1,41 @@
+O que precisamos saber sobre o java
+
+    O que é o java?
+        Criado em 1995 pela sun por james gosling
+        java é compilado para um bytcode que é interpretado pela maquina virtual
+    
+    O que é compilador - javac
+        é um programa que a partir de um codigo fonte, cria um programa semanticamente queivalente, porém escrito em 
+        outra linguagem, traduz um programa de uma linguagem textual  para uma linguagem de máquina, especifica para um
+        processador e sistema operacional
+        traduzem o código fonte de uma linguagem de alto nível para uma de baixo nível
+    
+    o que é bytcode
+        programa interpretado e executado pela jvm, gerado pelo javac
+
+    o que é jvm
+        VM:
+            simula uma máquina fisica
+        executa programa java, executando os bytcode
+        compila o java para o bytecode, roda em uma jvm de qualquer sistema operacional 
+
+    o que é jre
+        ambiente de execução do java, é composta pela jvm, bibliotecas e apis da linguagem java e outros componentes para suporte
+        representa a parte responsável pela execução do software java
+    
+    o que é jdk
+        conjunto de varios utilitarios do java, compilador e incluindo a jre
+
+    o que é jse
+        distribuição minima da plataforma de desenvolvimento de aplicações java
+    
+    Java EE
+        extensão do java se, suporte para sistemas corporativos
+        possui especificações de partes de infra da aplicação, acesso ao bando de dados
+        jboss, weblog
+    
+    o que é jakarta EE
+        oracle cedeu todo o codigo fonte, implementações e especificação do java ee para a eclipse foundation, com nome jakarta
+        evolução da especificações e padrões do java sera feita sob o nome jakarta EE, com compatibilidade com o java EE
+
+    

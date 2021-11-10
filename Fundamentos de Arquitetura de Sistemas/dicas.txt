@@ -1,0 +1,260 @@
+---- Vantagens e desenvolvimento de web service
+O que são Web Services:
+    são soluções para aplicações independente da linguagem utilizada, software e hardwares
+    inicialmente foram criados para troca de mensagens utilizando xml rodando sobre protocolo http
+    pode se dizer que serviços web são apis que se comunicam pela rede sobre protocolo
+
+    serviço web e uma api mas api nem sempre é serviço web
+
+    Vantagens:
+        Linguagem comum (xml, JSON)
+        integração
+        reutilização de implementação
+        segurança
+        custo (mais barato)
+
+    principais tecnologias:
+        SOAP
+        REST
+        XML
+        JSON
+
+Estrutura SOAP:
+    SOAP simple object access protocol
+        baseado em xml para acessar web service por http
+        como serviços web se comunicam
+        desenvolvido para facilitar integrações
+        permite integrações
+        mensagens XML
+        permite roda em cima de outros protocolos
+
+    XML - entensive markup language
+        criada pelo w3c na decada de 90
+        facilita separação de conteudo
+        não tem limitação de criação de tags
+        linguagem comum para integrações de aplicações
+
+    SOAP Message possui estrutura unica que  deve ser seguida
+        SOAP envelope : encapsula toda a mensagem
+        SOAP Header: possui informação de atributos e metadados da requisição
+        SOAP Body: contem delalhes da aplicação 
+
+Entendendo o que é WSDL e XSD
+    WSDL: web service description languagem
+        usado para descrever web service, funciona como um contrato do serviço
+        descrição feito por um documento XML
+
+    XSD: XML schema definition
+        usado para definir a estrutura de dados que sera validada no xml
+        funciona como uma documentação de como deve ser montado o SOAP Message
+
+    exemplo: http://www.soapclient.com/xml/soapresponder.wsdl
+    ajudar no gerencimento do SOAP: https://www.soapui.org/, transformando o xml para xml Message
+
+Aprenda o que são REST, API e JSON
+
+    O que é REST
+        respresentation state transfer
+        estilo de arquitetura de software, define a implementação de um serviço web
+        podem trabalhar com formatos xml, JSON entre outros
+
+    Vantagens em se utilizar REST
+        permite integrações entre aplicaçõe e também entre cliente e servidor
+        utiliza metodos http para as operações efetuadas
+        arquitetura facil compreensão
+
+    o que é api
+        application programming interface
+        conjuntos de rotinas documentadas e disponibilizadas por uma aplicação
+        popular com o aumento dos serviços web
+
+    Entendendo metodos utilizados pelo REST
+        Get - solicita representação de um recurso
+        post - solicita a criação de um recurso
+        delete - solicita a exclusão de um recurso
+        put - solicita a atualização de um recurso
+
+    JSON
+        javaScript Objebct notation
+        formato leve para troca de mensagem entre sistemas
+        estrutura de chave e valor e também listas ordenadas
+        um dos mais populares e utilizados
+
+Veja sobre integração com REST e métodos HTTP na prática
+
+    Codigo de Estado
+        usado pelo servidor para avisar o cliente sobre o estado da operação
+        retorna uma mensagem com o status
+        1xx - informativo
+            avisa que recebeu informação mas não garante o sucesso da informação
+        2xx - sucesso
+            recebida e processada com sucesso
+        3xx - redirecionamento 
+            aviso de requisição de uri, se mudou ou não
+        4xx - erro do cliente
+            quando o cliente inseriu informação errada na mensagem, 
+            usando uri errada, exemplo 404 not found
+        5xx - erro do servidor
+            erro interno, da hospegadem por exemplo
+        
+
+----- Conceitos de arquitetura em aplicações para internet
+
+Introdução a arquitetura de sistemas
+    Tipos de arquitetura
+        Monolito: 
+            uma unica aplicação com acesso a tudo
+            conversando sobre protocolo http
+        microserviços:
+            um serviço para cada operação
+            escalavel
+            varios serviços conversando entre eles
+            message broker: para mandar mensagens entre os serviços,
+            pode não haver comunicação direta entre os serviços pelo message broker
+            arquiteura em pipeline
+            pipeline gerencia as mensagens dos serviços e manda para o cliente
+
+    
+Comparativo entre os tipos de arquitetura
+    Monolito:
+        pro:
+            baixa complexidade
+            monitoramento simplificado
+        contra:
+            stack unica 
+            compartilhamento de recursos 
+            acoplamento
+            mais complexo a escabilidade
+    
+    microserviços
+        pros
+            stack dinamica
+            simples escabilidade
+            pode haver desacoplamento
+            pode haver menor complexidade
+
+        contra
+            acoplamento
+            monitoramento mais complexo
+            provisionamento mais complexo
+            plataforma pode depender do gerenciador de pipeline
+
+gerencimento de erros e volume de acessos
+    Onde é mais complexos:
+        processos assincronos 
+        pipeline
+    
+    solução
+        dead letter queue
+        filas de re-tentativas
+
+Exercícios
+    https://github.com/jeffhsta/fundamentos_arquitetura
+
+
+    
+----- Arquiteura de aplicações moveis e internet das coisas
+
+Conceitos da Internet das Coisas
+    inicio com o ARPANET 
+    no inicio trocar informações com centro de pesquisas
+    
+    embutir sensores em objetos do dia a dia
+    coletar dados dos sensores
+    usar os dados para tomar decisão
+    Smart Building
+        tomar decisão por exemplo previnir incendio, controle de pessoas e acessos,
+        controle de energia
+    
+    Smart Home
+        sensores dados relacionados a casa, presença de pessoas,
+        gerenciamento de energia,
+        detectar coisas que estão em mal funcionamento
+    
+    Wearables
+        componentes para o corpo, coletando os dados sobre a nossa saude,
+        habitos, para trazer beneficios
+    
+    Agriculture
+        processos produtivos mais sustentaveis
+    
+    Smart transportation
+        coletam dados de transito para ver objetos ao redor,
+    
+    RFID suplly Chain
+        etiquetas de radio frequencia
+
+    energy efficiency
+        fontes de geração de energia 
+        tomadas de decisão para isso
+
+    Computação ubíqua
+        tecnologia fica em plano de fundo em nossas vidas
+        tecnologia se torna realmente eficaz
+    
+    Desafios da internet das coisas
+        privacidade e segurança
+        quantidad exponencial de dispositivos conectados a rede
+        ser capaz de processar e armazenar uma enorme quantidade de informações
+        gerar valor a partir dos dados coletados
+
+Arquitetura da internet das coisas e protocolo de comunicação
+    Como conectar as coisas?
+    
+    produtos out of the box
+        lampadas inteligentes
+        assistentes com comando de voz (alexia)
+    
+    Considere esses atributos na escolha
+        baixo consumo de energia
+        rede de dados limitado
+        resiliencia
+        segurança 
+        customização
+        baixo custo
+    
+    Arduino
+        Plataforma de prototipagem
+        com entradas/saidas
+        desenvolvedor escreve em C/C++
+        interface serial ou usb
+        shields
+    
+    Embarcados
+        ter garantia de execução
+        não ter falhas
+        microcontrolador de chip unico
+        sistema operacional real time (fala diretamente com o hardware e comunica com tempo de execução aceitavel)
+        Embarcado
+        uso industrial, médico,militar, transporte
+        pode estar ligado direto no hardware, por exemplo em um veiculo direto
+    
+    Minicomputadores   
+        raspberry pi
+        computador completo
+        hardware integrado em uma unica placa
+        roda SO linux ou windows
+        uso domestico ou comercial
+
+    Protocolo de comunicação
+        Smartphone
+        gps tracker - melhor solução
+            por ser embarcado e assim ter melhor controle
+        
+        MQTT
+            independente da linguagem se comunica com a nuvem
+            Criado pela IBM
+            base na pilha do TCP/IP
+            protocolo de mensagem assincrona(M2M)
+            criado para conectar sensores de pipelines de petroleo a satelites
+            padrão OASIS suportados pelas linguagens de programação mais populares
+        
+        Modelo cliente servidor
+            Cliente -> request(http) -> server
+            Cliente <- response(http) <- server
+
+            modelo sincrono
+
+Flexibilidade dos tópicos e Cloud
+    protocolo(mqtt) -> broker -> uder indentifier -> sensor -> information type
+    
