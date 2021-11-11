@@ -1,0 +1,9 @@
+
+-----List
+    ArrayList
+    Vector
+
+    garante ordem de inserção
+    permite edição sem regras adicionais
+    permite ordenação atraves de comparators
+    
