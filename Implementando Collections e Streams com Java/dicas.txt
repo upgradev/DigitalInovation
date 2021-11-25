@@ -39,3 +39,47 @@
         sendo mais lento que o LinkedHashSet;
 
 
+----------- Map
+    entrada chave valor;
+    permite valores repetidos, mas não permite repetição de chave;
+    permite adição, busca por chave ou valor, atualização, remoção e navegação;
+    pode ser ordenado;
+
+        HashMap
+            mais performatico
+
+        TreeMap
+
+
+        HashTable
+
+----------- comparators
+    algoritmo de ordenação
+    utilizado primariamente em java.utils.List
+    permite ordenação de objetos complexos
+
+    Comparator 
+        Interface para definir classe com regra de ordenação
+    
+    Comparable
+        Interface para definir regra de ordenação em uma classe de dominio
+
+------------- optional
+    tratamento de valores que podem ser nulos
+    possui dois estados
+        presente
+        vazio
+    permite que voce execute operações em valores que podem ser nulos sem preocupação com as 
+    famosas nullpointerexceptions
+
+------------- stream api
+    manipulações de coleções com o paradigma funcional de forma paralela
+    imutavel - não altera a coleção de origem, sempre cria uma nova coleção
+    funcionalidades
+        mapping - retorna uma coleção com os mesmos tamanhos da origem com os elementos alterados
+        filtering - retorna uma coleção igual ou menor que a coleção origem, com os elementos intactos
+        fortEach - executa uma determinada logica para cada elemento retornando nada
+        peek - executa uma determinada logicva para cada elemento, retornando a propria coleção
+        couting - retorna um inteiro que representa a contagem de elementos
+        grouping - retorna uma coleção agrupada de acordo com a regra definida
+
